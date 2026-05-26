@@ -1,0 +1,62 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Opinion Learn",
+  "description": "Prediction markets, plainly explained — and how to read them around the 2026 FIFA World Cup.",
+  "colors": {
+    "primary": "#ED6432",
+    "light": "#F96F3D",
+    "dark": "#ED6432"
+  },
+  "favicon": "/favicon.svg",
+  "appearance": {
+    "default": "light"
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Learn",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "index"
+            ]
+          },
+          {
+            "group": "Prediction Market Basics",
+            "pages": [
+              "learn/what-is-a-prediction-market",
+              "learn/prediction-markets-vs-sports-betting",
+              "learn/trade-before-resolution",
+              "learn/order-book-spread-liquidity"
+            ]
+          },
+          {
+            "group": "World Cup 2026",
+            "pages": [
+              "learn/world-cup-multi-choice-markets"
+            ]
+          }
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Open Opinion",
+          "icon": "arrow-up-right-from-square",
+          "href": "https://app.opinion.trade"
+        },
+        {
+          "anchor": "World Cup Markets",
+          "icon": "futbol",
+          "href": "https://app.opinion.trade/world-cup"
+        }
+      ]
+    }
+  },
+  "footer": {
+    "socials": {}
+  }
+}
