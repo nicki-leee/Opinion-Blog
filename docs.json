@@ -4,13 +4,28 @@
   "name": "Opinion Learn",
   "description": "Prediction markets, plainly explained — and how to read them around the 2026 FIFA World Cup.",
   "colors": {
-    "primary": "#ED6432",
-    "light": "#F96F3D",
-    "dark": "#ED6432"
+    "primary": "#FF5917",
+    "light": "#FF7A3D",
+    "dark": "#FF5917"
   },
-  "favicon": "/favicon.svg",
+  "logo": {
+    "light": "/logo/logo_color.svg",
+    "dark": "/logo/logo_color.svg",
+    "href": "https://app.opinion.trade"
+  },
+  "favicon": "/logo/symbolmark_color.svg",
   "appearance": {
     "default": "light"
+  },
+  "fonts": {
+    "heading": {
+      "family": "Manrope",
+      "weight": 700
+    },
+    "body": {
+      "family": "Manrope",
+      "weight": 400
+    }
   },
   "navigation": {
     "tabs": [
@@ -56,7 +71,17 @@
       ]
     }
   },
+  "navbar": {
+    "primary": {
+      "type": "button",
+      "label": "Trade on Opinion",
+      "href": "https://app.opinion.trade"
+    }
+  },
   "footer": {
-    "socials": {}
+    "socials": {
+      "x": "https://x.com/opinionlabs",
+      "github": "https://github.com/nicki-leee/Opinion-Blog"
+    }
   }
 }

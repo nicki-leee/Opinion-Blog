@@ -1,0 +1,122 @@
+/* ─── Opinion typography ───
+ *
+ * Brand convention:  letters → Manrope · digits 0-9 → Space Mono
+ *
+ * Implementation: define a composed family "OpinionStack" that
+ * ONLY claims the U+0030–U+0039 unicode range (digits) and is
+ * backed by Space Mono. When this family is applied alongside
+ * Manrope as the trailing fallback, the browser picks Space Mono
+ * for digits and Manrope for everything else — automatically.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'OpinionStack';
+  src: local('Space Mono'), local('SpaceMono-Regular');
+  font-weight: 400;
+  font-style: normal;
+  unicode-range: U+0030-0039;
+}
+
+@font-face {
+  font-family: 'OpinionStack';
+  src: local('Space Mono Bold'), local('SpaceMono-Bold');
+  font-weight: 700;
+  font-style: normal;
+  unicode-range: U+0030-0039;
+}
+
+/* Apply globally. Manrope is loaded by Mintlify via docs.json fonts;
+   listing it second lets the browser fall through for non-digit chars. */
+:root,
+body,
+h1, h2, h3, h4, h5, h6,
+p, span, div, li, td, th,
+a, button, input, select, textarea,
+[class*="prose"] * {
+  font-family: 'OpinionStack', 'Manrope', ui-sans-serif, system-ui, -apple-system, sans-serif !important;
+}
+
+/* Code elements stay fully Space Mono (letters + digits both monospaced) */
+:not(pre) > code,
+pre,
+pre code,
+kbd, samp {
+  font-family: 'Space Mono', ui-monospace, SFMono-Regular, Menlo, monospace !important;
+}
+
+
+/* ─── Opinion brand color touches ─── */
+
+:root {
+  --opinion-orange: #FF5917;
+  --opinion-orange-hover: #FF7A3D;
+  --opinion-orange-soft: #FFE8DC;
+  --opinion-dark: #0B0D10;
+}
+
+/* Body links — keep the brand orange visible on hover */
+a:hover {
+  color: var(--opinion-orange) !important;
+}
+
+/* Card hover — subtle orange border lift */
+[class*="card"]:hover,
+.card:hover {
+  border-color: var(--opinion-orange) !important;
+  box-shadow: 0 4px 16px rgba(255, 89, 23, 0.12) !important;
+  transition: all 180ms ease;
+}
+
+/* Inline code — soften the default monospaced block to a warm Opinion tint */
+:not(pre) > code {
+  background: var(--opinion-orange-soft) !important;
+  color: var(--opinion-orange) !important;
+  border: 1px solid rgba(255, 89, 23, 0.18) !important;
+  padding: 0.1em 0.4em;
+  border-radius: 4px;
+  font-size: 0.92em;
+}
+
+/* Dark mode adjustments — keep the orange but tone the soft surface */
+html.dark :not(pre) > code {
+  background: rgba(255, 89, 23, 0.14) !important;
+  color: #FFAA77 !important;
+  border-color: rgba(255, 89, 23, 0.32) !important;
+}
+
+/* Pull-quotes / blockquotes — Opinion orange accent rule */
+blockquote {
+  border-left: 3px solid var(--opinion-orange) !important;
+  background: linear-gradient(90deg, var(--opinion-orange-soft) 0%, transparent 70%);
+  padding-left: 1rem;
+}
+
+html.dark blockquote {
+  background: linear-gradient(90deg, rgba(255, 89, 23, 0.10) 0%, transparent 70%);
+}
+
+/* Frame caption — slightly bolder, branded color */
+figcaption {
+  color: var(--opinion-orange) !important;
+  font-weight: 600 !important;
+}
+
+/* Tables — soften the header row */
+table thead th {
+  background: var(--opinion-orange-soft) !important;
+  color: var(--opinion-dark) !important;
+  font-weight: 700 !important;
+}
+
+html.dark table thead th {
+  background: rgba(255, 89, 23, 0.14) !important;
+  color: #FFAA77 !important;
+}
+
+/* Note callout — keep blue default but add a thin orange accent strip on the left */
+[class*="callout-note"],
+.callout-note {
+  border-left: 3px solid var(--opinion-orange) !important;
+}
