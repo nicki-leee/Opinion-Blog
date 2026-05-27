@@ -33,24 +33,36 @@
         "tab": "Learn",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Tutorial",
             "pages": [
-              "index"
-            ]
-          },
-          {
-            "group": "Prediction Market Basics",
-            "pages": [
+              "index",
               "learn/what-is-a-prediction-market",
               "learn/prediction-markets-vs-sports-betting",
               "learn/trade-before-resolution",
-              "learn/order-book-spread-liquidity"
+              "learn/order-book-spread-liquidity",
+              "learn/prediction-markets-for-beginners-2026"
             ]
           },
           {
             "group": "World Cup 2026",
             "pages": [
-              "learn/world-cup-multi-choice-markets"
+              "learn/world-cup-multi-choice-markets",
+              "learn/how-to-bet-world-cup-2026-prediction-markets",
+              "learn/world-cup-2026-winner-odds-tracker",
+              "learn/world-cup-2026-group-stage-odds-guide",
+              "learn/prediction-markets-vs-sportsbooks-world-cup"
+            ]
+          },
+          {
+            "group": "Blog",
+            "pages": [
+              "learn/polymarket-vs-kalshi-vs-opinion",
+              "learn/polymarket-kalshi-opinion-fees",
+              "learn/best-prediction-markets-2026",
+              "learn/prediction-markets-lowest-fees-comparison",
+              "learn/biggest-prediction-markets-by-volume-2026",
+              "learn/political-betting-vs-prediction-markets",
+              "learn/esports-prediction-markets-explained"
             ]
           }
         ]
@@ -80,7 +92,8 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/opinionlabs",
+      "x": "https://x.com/opinionlabsxyz",
+      "telegram": "https://t.me/opinionlabsxyz",
       "github": "https://github.com/nicki-leee/Opinion-Blog"
     }
   }

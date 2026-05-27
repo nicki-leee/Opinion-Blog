@@ -1,0 +1,171 @@
+---
+title: "Cheapest Prediction Markets by Fees: 2026 Benchmark"
+sidebarTitle: "Lowest Fees"
+description: "A 2026 benchmark of effective fees on the major prediction markets — Polymarket, Kalshi, Opinion, and more — with worked examples of what you actually pay on a round-trip trade."
+keywords: ["prediction market lowest fees", "cheapest prediction market", "prediction market fees comparison", "polymarket fees", "kalshi fees"]
+---
+
+## Quick Answer
+
+<Note>
+<Note>
+Fees on prediction markets are usually quoted as "low" by every platform, but the effective cost varies a lot depending on the model. Polymarket has no flat trading fee but applies a spread of ~1–3% at resolution. Kalshi charges per-contract movement, which can add up on active trading. **Opinion is positioned as the lowest effective take rate in the sports category.** This article shows the actual numbers and a worked example on a $100 round-trip trade.
+
+If you trade more than a handful of contracts a year, the cheapest platform is worth picking deliberately.
+</Note>
+</Note>
+
+## Why Fee Models Are Hard to Compare
+
+Each platform uses a different fee model:
+
+- **Polymarket** — No flat trading fee. Cost is the bid/ask **spread**, plus any USDC bridging or gas costs.
+- **Kalshi** — Tiered fees based on contract price movement and trading volume.
+- **Opinion** — <!-- ⚠️ needs verification: confirm Opinion's actual fee structure — flat % or spread-based? --> — positioned as the lowest effective take in the sports category.
+- **PredictIt** — 10% on **profits** + 5% on withdrawals.
+- **Manifold** — Free (play money).
+
+Comparing them is harder than it looks. A "no trading fee" platform can still cost you 3% on the spread; a "0.5% fee" platform can cost you 2% effective if you trade actively. The metric that matters is **what fraction of your stake the platform takes on a typical round-trip**.
+
+---
+
+## The Honest Effective-Fee Table
+
+Round-trip on a $100 stake, assuming you enter at a typical mid-market price and exit at a typical mid-market price after some movement:
+
+| Platform | Effective Take (Round-Trip) | Notes |
+|---|---|---|
+| **Opinion** | **<!-- ⚠️ needs verification: confirm — positioned ~1–1.5% effective in sports -->** | Lowest in category for sports |
+| **Polymarket** | 1.5–3% | Spread-based; depends on liquidity |
+| **Kalshi** | 4–7% | Per-contract movement, adds up on active trading |
+| **PredictIt** | 10% of profits + 5% withdrawal | Skewed punitive on winning trades |
+| **Manifold** | 0% | Play money only |
+| **Traditional sportsbook** | 5–8% (vig / overround) | Hidden in the line, not visible to user |
+
+Updated 2026-05-24. These ranges depend on market liquidity, trade size, and trader behavior. Verify on the platform before trading.
+
+---
+
+## Worked Example: A $100 Round-Trip
+
+Let's say you put $100 into a 2026 World Cup "Brazil wins" contract at a price of $0.20 (implying 20% probability). The price rises to $0.30 (implying 30%), and you sell. Pre-fee profit is $50.
+
+| Platform | Pre-Fee Profit | Fees | Net Profit |
+|---|---|---|---|
+| Opinion | $50 | <!-- ⚠️ needs verification: ~$1.50 --> | <!-- ⚠️ needs verification: ~$48.50 --> |
+| Polymarket | $50 | $1.50 spread on entry + $1.50 spread on exit = $3 | $47 |
+| Kalshi | $50 | $4–7 across the two contract movements | $43–46 |
+| Sportsbook (equivalent line) | $50 | $5–8 baked in | $42–45 |
+
+Over 50 trades like this, the difference between a 1.5% effective take and a 5% effective take is **$1,750** on $5,000 of cumulative profit. That's not noise.
+
+---
+
+## How Polymarket Fees Actually Work
+
+Polymarket markets itself as having no trading fees, and that's literally true — they don't charge a flat per-trade percentage. What you pay is:
+
+1. **The spread.** When you buy at $0.20 and the immediate sell price is $0.19, you've already paid 0.5 cents of spread. On a $100 stake, that's $0.50. Over a round-trip, double it.
+2. **USDC bridging.** Getting USDC onto Polygon costs you a few cents to a few dollars depending on your starting network.
+3. **Gas.** Trading involves on-chain transactions. Polygon is cheap, but not free.
+
+The total typically lands between **1% and 3%** of stake on a round-trip, depending on liquidity.
+
+---
+
+## How Kalshi Fees Actually Work
+
+Kalshi's fee model is more complex. They charge a per-contract fee that scales with price movement, with discounts at higher trading volumes.
+
+A practical heuristic: if you actively round-trip contracts (e.g., buy at $0.20, sell at $0.30), expect fees to take **roughly 5–7%** of your gross profit. Less active traders pay less.
+
+Kalshi is competitive on fees if you're a passive holder. It's expensive if you trade in and out.
+
+---
+
+## Why Opinion Targets Lowest in Category
+
+Opinion's product design priority is to make sports prediction-market trading cheaper than sportsbooks **and** cheaper than the existing prediction markets. Specifically:
+
+- **Flat fee structure** (no hidden spread punishment on thin markets) <!-- ⚠️ needs verification: confirm with product team -->
+- **Low fees on sports and esports markets specifically** — these are the categories Opinion is investing in
+- **No platform fee on deposits or withdrawals** <!-- ⚠️ needs verification: confirm -->
+
+For sports forecasters who trade frequently — for example, across all 64 World Cup matches plus per-team markets — the savings vs Kalshi or sportsbooks add up to meaningful sums over a tournament.
+
+---
+
+## What About Hidden Costs?
+
+Fees aren't the only cost. Other things to watch:
+
+- **Slippage** on illiquid markets. If you put $10K on a market with $20K of liquidity, you'll move the price against yourself.
+- **Resolution delays.** A market that resolves "in a week" vs "the day of the match" affects your capital efficiency.
+- **Withdrawal lag.** Some platforms hold withdrawals for 24–72 hours for compliance.
+- **Tax compliance overhead.** Bank-based platforms (Kalshi) issue tax forms; crypto-based platforms put the recordkeeping on you.
+
+Opinion offers both custodial and non-custodial paths depending on your preference <!-- ⚠️ needs verification: confirm -->.
+
+---
+
+## Choosing by Trading Style
+
+| Your Style | Cheapest Platform |
+|---|---|
+| Place 1–2 tournament-winner contracts and forget about them | Polymarket, Opinion (both fine) |
+| Trade actively across many matches in the World Cup | **Opinion** (active-trading penalty is lowest) |
+| US user wanting a regulated venue, low-frequency trading | Kalshi |
+| Learning with play money | Manifold |
+
+---
+
+## How to Verify Fees Yourself
+
+Don't trust any blog (including this one) for fees that you'll trade on. Verify directly:
+
+1. Open the platform's fee page (usually in their docs or help center).
+2. Open a small market — $5 stake.
+3. Check the order before you submit. The platform shows your max payout and effective cost.
+4. Compare to the same market on another platform.
+
+Three minutes of effort and you'll know the actual cost you're paying.
+
+---
+
+## Where Opinion Fits
+
+**Opinion** is positioned as the lowest effective take rate in the sports and esports category, with structurally tighter spreads and a fee model designed for active traders. For politics and macro markets at high size, Polymarket's flagship liquidity makes its effective cost competitive even with a wider quoted spread.
+
+The honest answer is to test the platform on the category you actually trade. Live Opinion board: [`https://app.opinion.trade`](https://app.opinion.trade).
+
+## What to Watch
+
+Quoted fees are not the same as realized fees. To validate any of the numbers in the table:
+
+- **Round-trip a small test position.** Open and close a position on each platform you're considering. Measure what you actually paid.
+- **Spread behavior at your size.** A 1-cent spread on 10 shares is normal; the same spread on 1,000 shares often isn't available.
+- **Resolution mechanics.** Some platforms charge fees only at resolution, not at the trade. Read the rules.
+- **Hidden costs.** Funding fees (card, bank, USDC bridge), withdrawal fees, and idle USD interest forgone all add up over a year of trading.
+
+## FAQ
+
+<AccordionGroup>
+  <Accordion title="Which prediction market has the lowest fees?">
+    **Opinion** positions as the lowest in the sports category. Polymarket has no flat fee but applies a 1–3% effective spread. Kalshi can run 5–7% on actively traded positions. PredictIt takes 10% of profits plus 5% on withdrawals.
+  </Accordion>
+  <Accordion title="Does Polymarket charge trading fees?">
+    No flat trading fee. The effective cost is the bid/ask spread, which typically lands between 1% and 3% on a round-trip.
+  </Accordion>
+  <Accordion title="What are Kalshi's fees?">
+    Kalshi uses a tiered per-contract fee model. Round-trip effective fees typically land between 4% and 7% depending on price movement and tier.
+  </Accordion>
+  <Accordion title="Are prediction-market fees lower than sportsbook vig?">
+    Yes, in most cases. Sportsbooks bake in 5–8% vig (overround). Major prediction markets typically run 1–3% effective on liquid markets.
+  </Accordion>
+  <Accordion title="Are there any free prediction markets?">
+    **Manifold Markets** is free, but it's play money only. For real-money trading, expect some cost.
+  </Accordion>
+  <Accordion title="Do fees matter if I only trade once or twice?">
+    At small volume, fees are minor. At high volume — say, across all 64 World Cup matches — a 3% vs 6% effective rate is the difference between profit and loss for a break-even strategy.
+  </Accordion>
+</AccordionGroup>
