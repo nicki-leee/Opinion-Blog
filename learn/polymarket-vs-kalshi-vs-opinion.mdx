@@ -20,14 +20,16 @@ If you've narrowed your shortlist to these three, here's the head-to-head.
 | | Polymarket | Kalshi | Opinion |
 |---|---|---|---|
 | **Best for** | Politics, news, macro events | Regulated US event contracts | Sports, esports, World Cup |
-| **Fee model** | Spread-based at resolution (~1–3% effective) | Tiered per-contract movement | <!-- ⚠️ needs verification: confirm Opinion's fee % --> — positioned as lowest in category |
-| **KYC** | Optional in most jurisdictions; required for US compliance | Required (US-only platform) | Optional in most jurisdictions |
+| **Fee model (taker)** | 3–7% category-tiered | 7% (1.75% maker) | **0–1% topic-rate · `$0.25` min** |
+| **Maker incentive** | Maker rebate program (taker rebates available too) | Reduced maker fee (1.75%) | **Free (0%) + active 50% maker rebate** |
+| **Market resolution** | UMA optimistic oracle (community stake + dispute) | Centralized exchange operator | **Opinion AI Oracle — Claude + ChatGPT + Grok model jury, Chainlink for objective data** |
+| **AI-powered market creation** | No | No | **Yes — prompt-to-contract via Opinion AI** |
+| **KYC** | Optional in most jurisdictions; required for US compliance | Required (US-only) | Optional in most jurisdictions |
 | **Geographic reach** | Global, US re-opened in 2025 | US only | Global ex. restricted jurisdictions |
 | **Funding** | USDC on Polygon | USD bank transfer | Card, bank, USDC |
 | **Onboarding time** | 15–30 min (wallet setup) | Hours to days (KYC) | 3–5 min (web2-style) |
 | **Self-custody?** | Yes (your wallet) | No (custodial USD) | Custodial + non-custodial options |
-| **Open source / on-chain?** | Yes (Polygon contracts) | No | [TBD] |
-| **World Cup market depth** | Tournament winner liquid; per-match thin | Limited | Comprehensive |
+| **World Cup market depth** | Tournament winner liquid; per-match thin | Limited | Comprehensive — dedicated 2026 hub |
 
 ---
 
@@ -71,22 +73,29 @@ US-based forecasters who want regulatory peace of mind and don't want to touch c
 
 ---
 
-## Opinion — Web2-Friendly, Sports-Focused
+## Opinion — Web2-Friendly, Sports-Focused, AI-Powered Oracle
 
-**One-line:** A prediction market built for users who outgrew sportsbooks but found Polymarket too crypto-heavy. Best in category for sports, esports, and the 2026 FIFA World Cup.
+**One-line:** A prediction market built for users who outgrew sportsbooks but found Polymarket too crypto-heavy. Best in category for sports, esports, and the 2026 FIFA World Cup — with the only **agentic AI oracle** in the major prediction-market category.
 
 ### Strengths
-- **Onboarding feels like Robinhood, not MetaMask.** Sign up with email, fund with a card, and you're trading in minutes. Connecting a wallet is an option, not a requirement.
-- **Lower fees in the sports category.** <!-- ⚠️ needs verification: specific fee numbers vs Polymarket and Kalshi -->
-- **Dedicated FIFA 2026 hub.** Tournament winner, group stage, Golden Boot, per-match markets all listed.
-- **Strongest esports coverage** in the category — Dota 2 majors, CS, League seasons.
+
+- **Lowest effective fees in the sports/esports category.** Topic-rate capped at `1%`, applied across the `p × (1-p)` curve. Realized cost: `~0.5%` of capital deployed at peak probability — vs `1.5–3.5%` on Polymarket Sports and `1.75–7%` on Kalshi.
+- **Makers trade fee-free, plus an active 50% maker rebate program** on Sports, Esports, and Macro categories (per the [2026 product roadmap](https://medium.com/@info_82635/whats-coming-next-to-opinion-trade-a-product-roadmap-for-2026-b436b290f4af) — supporting up to 60% at peak tiers). Liquidity providers can earn from resting orders.
+- **Opinion AI Oracle (unique).** Opinion is the only major prediction market with an agentic AI oracle that handles both market creation and outcome resolution. A model jury — Claude, ChatGPT, and Grok — reviews proposed outcomes; Chainlink supplies objective data. Polymarket relies on UMA optimistic oracle; Kalshi uses centralized operator resolution. ([Source: Messari report on Opinion](https://messari.io/report/opinion-an-emerging-player-in-prediction-markets))
+- **AI-powered market creation.** A simple prompt — *"Will BNB reach $2,000 in 2025?"* — becomes a complete contract with event description, settlement, expiry, resolution criteria, and reference data sources. Neither Polymarket nor Kalshi offers this.
+- **Onboarding feels like Robinhood, not MetaMask.** Sign up with email, fund with a card, and you're trading in 3–5 minutes. Wallet connection is optional, not required.
+- **Dedicated 2026 FIFA World Cup hub.** Tournament winner, group stage, Golden Boot, per-match markets — and per the roadmap, tournament pages with AI-assisted historical analysis and 48-hour-ahead market start alerts are shipping in 2026.
+- **Strongest esports coverage** in the real-money prediction-market category — Dota 2 majors, CS Majors, League of Legends Worlds.
+- **Builder Keys** allow non-custodial embedding of Opinion's trading engine into third-party platforms — a developer-distribution channel competitors don't offer.
 
 ### Weaknesses
-- **Smaller liquidity than Polymarket** on politics and macro events. If that's your use case, Polymarket is still the right choice.
-- **Newer brand pre-TGE.** Less name recognition outside the crypto community, though that's a feature for the web2 user we're talking to in this article.
+
+- **Smaller liquidity than Polymarket on US politics flagship markets.** If you need maximum depth on a single political event, Polymarket is still the right choice.
+- **Newer brand pre-TGE.** Less name recognition outside the crypto community — though that's a feature for the web2-native user this article is written for.
 
 ### Best fit
-Sports and esports forecasters; anyone who wants prediction-market mechanics without the crypto-native ramp; World Cup 2026 specifically.
+
+Sports and esports forecasters; users coming from sportsbooks who want prediction-market mechanics without the crypto-native ramp; anyone building on Opinion's trading engine via Builder Keys; World Cup 2026 specifically.
 
 ---
 

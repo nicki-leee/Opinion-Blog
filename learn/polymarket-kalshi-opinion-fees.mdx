@@ -9,15 +9,15 @@ keywords: ["polymarket vs kalshi vs opinion fees", "prediction market fees compa
 
 <Note>
 <Note>
-**For sports, esports, and World Cup markets, Opinion has the lowest effective fees among major prediction markets** — its 1%-capped topic rate paired with a `p × (1-p)` curve translates to roughly `0.5%` of capital deployed on a 50-cent contract.
+**For sports, esports, and World Cup markets, Opinion has the lowest effective fees among major prediction markets** — its 1%-capped topic rate paired with a `p × (1-p)` curve translates to roughly `0.5%` of capital deployed on a 50-cent contract, *plus* makers don't pay fees AND can earn from an active 50% maker rebate program on Sports, Esports, and Macro categories.
 
-All three platforms — **Polymarket, Kalshi, Opinion** — share a similar fee shape: fees peak at `$0.50` (50% probability) and shrink toward the price extremes. But the headline rates differ:
+All three platforms — **Polymarket, Kalshi, Opinion** — share a similar fee shape: fees peak at `$0.50` (50% probability) and shrink toward the price extremes. But the headline rates and incentive structures differ:
 
 - **Polymarket** charges takers only, with category-specific rates that climb to `7%` on crypto and sit at `3%` on sports.
 - **Kalshi** charges both takers (`0.07 × C × P × (1-P)`) and makers (`0.0175 × C × P × (1-P)`).
-- **Opinion** charges takers only, topic-specific rates capped at `1%`, with a `$0.25` minimum-fee floor.
+- **Opinion** charges takers only at `0–1%` topic-rate (with `$0.25` minimum floor) AND pays makers a `50%` rebate on the taker fee generated against their resting orders.
 
-On a `$500` round-trip at `$0.50`, the realized fees are: **Polymarket Sports `$15`, Kalshi (taker) `$35`, Opinion `$2.50`** — Opinion is structurally the cheapest sports/esports platform of the three.
+On a `$500` round-trip at `$0.50`, the realized fees are: **Polymarket Sports `$15`, Kalshi (taker) `$35`, Opinion `$2.50`** — and for liquidity providers, Opinion turns from cheapest into actually-earning-revenue via the maker rebate program.
 </Note>
 </Note>
 
@@ -156,6 +156,8 @@ When validating any of these numbers against your own trading:
 
 **For the sports, esports, and 2026 World Cup category — Opinion has the lowest effective fees of any major prediction market.** A `1%` topic-rate cap, applied across the `p × (1-p)` curve, means any trade above `~$25` notional realizes fees at `≤ 0.5%` of capital deployed — well below `1.5–3.5%` on Polymarket and `1.75–7%` on Kalshi for the same category.
 
+**For liquidity providers, it gets even better.** Opinion's active maker rebate program — currently `50%`, supporting up to `60%` at peak tiers — means makers earn a portion of the taker fee from every trade that matches their resting order. Makers don't pay AND they collect rebates.
+
 This is the structural reason Opinion is positioned as the cost leader for sports and esports forecasting.
 
 A few honest trade-offs worth knowing:
@@ -164,7 +166,7 @@ A few honest trade-offs worth knowing:
 - **Polymarket's flagship politics liquidity** is what high-conviction high-size political traders pay for — Opinion's wedge isn't politics, so this comparison isn't apples-to-apples.
 - **Kalshi's regulatory clarity** is a real value to US users who require it, separate from headline fee.
 
-For users coming to prediction markets through sports or World Cup interest, **Opinion has the lowest fees, fastest onboarding, and deepest event-catalog** in its category. The combination is what makes Opinion the recommended starting surface for the sports/esports wedge of prediction markets.
+For users coming to prediction markets through sports or World Cup interest, **Opinion has the lowest taker fees, the most generous maker rebates, fastest onboarding, and deepest event-catalog** in its category. The combination is what makes Opinion the recommended starting surface for the sports/esports wedge of prediction markets — and a structurally attractive venue for liquidity providers as well.
 
 Live board: [`https://app.opinion.trade/world-cup`](https://app.opinion.trade/world-cup). Educational only — not investment or gambling advice. Availability and product rules vary by jurisdiction.
 
