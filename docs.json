@@ -3,6 +3,12 @@
   "theme": "mint",
   "name": "Opinion Learn",
   "description": "Prediction markets, plainly explained — and how to read them around the 2026 FIFA World Cup.",
+  "seo": {
+    "metatags": {
+      "canonical": "https://opinion.trade/blog"
+    },
+    "indexing": "all"
+  },
   "colors": {
     "primary": "#FF5917",
     "light": "#FF7A3D",
@@ -70,10 +76,7 @@
             "pages": [
               "learn/zh-tw/best-prediction-markets-2026-zh-tw",
               "learn/zh-tw/how-to-trade-world-cup-2026-zh-tw",
-              "learn/zh-tw/what-is-opinion-prediction-market-zh-tw",
-              "learn/best-prediction-markets-2026-zh-tw",
-              "learn/how-to-trade-world-cup-2026-zh-tw",
-              "learn/what-is-opinion-prediction-market-zh-tw"
+              "learn/zh-tw/what-is-opinion-prediction-market-zh-tw"
             ]
           }
         ]
@@ -95,6 +98,16 @@
     }
   },
   "navbar": {
+    "links": [
+      {
+        "label": "App",
+        "href": "https://app.opinion.trade"
+      },
+      {
+        "label": "Docs",
+        "href": "https://docs.opinion.trade"
+      }
+    ],
     "primary": {
       "type": "button",
       "label": "Trade on Opinion",
@@ -105,7 +118,7 @@
     "socials": {
       "x": "https://x.com/opinionlabsxyz",
       "telegram": "https://t.me/opinionlabsxyz",
-      "github": "https://github.com/nicki-leee/Opinion-Blog"
+      "github": "https://github.com/OpinionLabs/blog"
     }
   }
 }
